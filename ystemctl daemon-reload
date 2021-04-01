@@ -1,0 +1,14 @@
+[0;1;31mWarning:[0m The unit file, source configuration file or drop-ins of gunicorn.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+[0;1;32m●[0m gunicorn.service - Gunicorn daemon for Django Project
+     Loaded: loaded (/etc/systemd/system/gunicorn.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Fri 2021-03-26 13:59:27 UTC; 5 days ago
+   Main PID: 640 (gunicorn3)
+      Tasks: 4 (limit: 1136)
+     Memory: 117.8M
+     CGroup: /system.slice/gunicorn.service
+             ├─640 /usr/bin/python3 /usr/bin/gunicorn3 --name=django_project --pythonpath=/home/django/django_project --bind unix:/home/django/gunicorn.socket --config /etc/gunicorn.d/gunicorn.py django_project.wsgi:application
+             ├─845 /usr/bin/python3 /usr/bin/gunicorn3 --name=django_project --pythonpath=/home/django/django_project --bind unix:/home/django/gunicorn.socket --config /etc/gunicorn.d/gunicorn.py django_project.wsgi:application
+             ├─850 /usr/bin/python3 /usr/bin/gunicorn3 --name=django_project --pythonpath=/home/django/django_project --bind unix:/home/django/gunicorn.socket --config /etc/gunicorn.d/gunicorn.py django_project.wsgi:application
+             └─851 /usr/bin/python3 /usr/bin/gunicorn3 --name=django_project --pythonpath=/home/django/django_project --bind unix:/home/django/gunicorn.socket --config /etc/gunicorn.d/gunicorn.py django_project.wsgi:application
+
+Warning: some journal files were not opened due to insufficient permissions.
